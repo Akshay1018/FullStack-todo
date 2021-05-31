@@ -1,6 +1,4 @@
 import React, { useContext } from 'react';
-
-
 import ToDoContext from '../../context/todo/TodoContext';
 function Pagination() {
     const todoContext = useContext(ToDoContext);

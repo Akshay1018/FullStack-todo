@@ -20,7 +20,7 @@ function Register(props) {
             })
             clearErrors()
         }
-    }, [error, isAuthenticated, setAlert]);
+    }, [error, isAuthenticated, setAlert,props.history,clearErrors]);
     const [user, setUser] = useState({
         name: '',
         email: '',

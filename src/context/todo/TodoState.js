@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import ToDoContext from '../todo/TodoContext'
 import ToDoReducer from '../todo/TodoReducer';
-import { SET_TASKLIST, SET_EDIT_TASK, SET_LOADING, ERROR_ALERTS, CLEAR_ERRORS, SET_CURR_PAGE, PAGINATE, PAGE_RANGE, LIST_TODOS } from '../types.js';
+import { SET_TASKLIST, SET_EDIT_TASK, SET_LOADING, ERROR_ALERTS, CLEAR_ERRORS, SET_CURR_PAGE, PAGINATE, PAGE_RANGE } from '../types.js';
 
 function ToDoState(props) {
     const initialState = {
@@ -81,13 +81,6 @@ function ToDoState(props) {
         })
     }
 
-
-    // const setAlert = (msg) => {
-    //     dispatch({
-    //         type: SET_ALERT,
-    //         payload: msg
-    //     })
-    // }
     const clearErrors = () => {
         dispatch({
             type: CLEAR_ERRORS

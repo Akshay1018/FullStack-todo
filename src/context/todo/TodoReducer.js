@@ -1,12 +1,8 @@
-import { SET_ALERT, SET_EDIT_TASK, SET_LOADING, SET_TASKLIST, ERROR_ALERTS, CLEAR_ERRORS, SET_CURR_PAGE, PAGINATE, PAGE_RANGE, LIST_TODOS } from "../types";
+import { SET_ALERT, SET_EDIT_TASK, SET_LOADING, SET_TASKLIST, ERROR_ALERTS, CLEAR_ERRORS, SET_CURR_PAGE, PAGINATE, PAGE_RANGE } from "../types";
 // eslint-disable-next-line
 export default (state, action) => {
     switch (action.type) {
-        // case LIST_TODOS:
-        //     return {
-        //         ...state,
-        //         taskList: action.payload
-        //     }
+
         case PAGE_RANGE:
             return {
                 ...state,

@@ -24,7 +24,7 @@ function Login(props) {
             });
             clearErrors();
         }
-    }, [error, isAuthenticated, setAlert, clearErrors,user])
+    }, [error, isAuthenticated, setAlert, clearErrors,user,props.history])
     const onchange = (e) => {
         setUserData({ ...userData, [e.target.name]: e.target.value });
     }
