@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(54, 54, 153);
+  color: rgb(143 143 239);
   text-decoration: underline;
 }
 h1 {
@@ -268,7 +268,7 @@ header {
   line-height: 33px;
   background: #13123a;
   border: 0;
-  border-bottom: 2px dashed #fff;
+  border-bottom: 2px dotted #fff;
   color: #fff;
   font-size: 18px;
   padding: 8px 5px;
@@ -440,22 +440,41 @@ select:-webkit-autofill:focus {
   border-radius: 5px;
   margin: 0 4px;
   text-decoration: dotted;
-  
-  
+   
+}
+nav button{
+  background-color:#ccc;
+  border-radius:2px;
+  margin: 0 4px;
+  padding: 5px 20px;
+  border:0px
+}
+button.active{
+  background-color: aqua;
+  border-radius: 2px;
+  margin: 0 4px;
+  padding: 5px 20px;
 }
 
+div#loading {
+  display: flex;
+}
+.tasklist,#loading{min-height:395px}
+.register #loading,.login #loading{min-height:10px}
 
- .pagination {
- position: absolute;
+
+.pagination {
+  position: absolute;
   border-radius: 5px;
-  margin: 0 4px;
-  padding: 30px 700px;
   text-decoration: dotted;
-  /* display: flex; */
-  /* list-style: none;
-  outline: none; */
+  display: flex;
   transition: aqua .3s;
-} 
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
 
 
 /* .pagination > .active > a{

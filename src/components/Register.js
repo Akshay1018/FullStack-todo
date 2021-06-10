@@ -5,6 +5,7 @@ import AuthContext from '../context/auth/AuthContext';
 import AlertContext from '../context/alert/AlertContext';
 import Loading from './Loading';
 
+
 function Register(props) {
     const authContext = useContext(AuthContext);
     const alertContext = useContext(AlertContext);

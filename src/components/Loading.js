@@ -3,7 +3,7 @@ import loadingImage from './loading.gif';
 
 function Loading() {
     return (
-        <>
+        <div id="loading">
             <img src={loadingImage}
                 alt='Loading'
                 style={{
@@ -11,7 +11,7 @@ function Loading() {
                     width: '80px',
                     margin: 'auto'
                 }} />
-        </>
+        </div>
     )
 }
 

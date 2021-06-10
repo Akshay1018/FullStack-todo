@@ -63,7 +63,7 @@ function ToDoState(props) {
     const setTaskList = async () => {
         try {
             setLoading()
-            const res = await axios.get('https://thshackathon.herokuapp.com/api/user/todo/get');
+            const res = await axios.get('https://todo-backend-fullstack.herokuapp.com/api/user/todo/get');
             dispatch({
                 type: SET_TASKLIST,
                 payload: res.data
@@ -96,7 +96,7 @@ function ToDoState(props) {
     const addTask = async (title) => {
         try {
             setLoading()
-            await axios.post('https://thshackathon.herokuapp.com/api/user/todo/add', { title });
+            await axios.post('https://todo-backend-fullstack.herokuapp.com/api/user/todo/add', { title });
             setTaskList()
         } catch (err) {
             return handleAlert(err.response.data);
@@ -106,7 +106,7 @@ function ToDoState(props) {
 
         try {
             setLoading()
-            await axios.put(`https://thshackathon.herokuapp.com/api/user/todo/update/${id}`, { title });
+            await axios.put(`https://todo-backend-fullstack.herokuapp.com/api/user/todo/update/${id}`, { title });
             setTaskList()
         } catch (err) {
             return handleAlert(err.response.data);
@@ -116,7 +116,7 @@ function ToDoState(props) {
     const deleteTask = async (id) => {
         try {
             setLoading()
-            await axios.delete(`https://thshackathon.herokuapp.com/api/user/todo/delete/${id}`);
+            await axios.delete(`https://todo-backend-fullstack.herokuapp.com/api/user/todo/delete/${id}`);
             setTaskList()
         } catch (err) {
             return handleAlert(err.response.data);
